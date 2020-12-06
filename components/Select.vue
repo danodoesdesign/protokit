@@ -11,9 +11,9 @@
           name="select"
           id="select"
         >
-          <option>First</option>
-          <option>Second</option>
-          <option>Third</option>
+          <option value="First">First</option>
+          <option value="Second">Second</option>
+          <option value="Third">Third</option>
         </select>
 
         <select
@@ -24,9 +24,9 @@
           name="select"
           id="select"
         >
-          <option>First</option>
-          <option>Second</option>
-          <option>Third</option>
+          <option value="First">First</option>
+          <option value="Second">Second</option>
+          <option value="Third">Third</option>
         </select>
         <div class="flex flex-col justify-center pointer-events-none">
           <!-- Heroicon name: selector -->

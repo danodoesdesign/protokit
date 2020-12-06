@@ -51,25 +51,25 @@
           <div class="">
             <a
               href="#"
-              class="block px-4 py-2 transform duration-200 hover:bg-gray-300"
+              class="block px-4 py-2 transform duration-200 hover:bg-gray-300 focus:bg-gray-300"
               role="menuitem"
               >Edit</a
             >
             <a
               href="#"
-              class="block px-4 py-2 transform duration-200 hover:bg-gray-300"
+              class="block px-4 py-2 transform duration-200 hover:bg-gray-300 focus:bg-gray-300"
               role="menuitem"
               >Duplicate</a
             >
             <a
               href="#"
-              class="block px-4 py-2 text-green-900 bg-green-200 transform duration-200 hover:bg-green-300"
+              class="block px-4 py-2 text-green-900 bg-green-200 transform duration-200 hover:bg-green-300 focus:bg-green-300"
               role="menuitem"
               >Positive</a
             >
             <a
               href="#"
-              class="block px-4 py-2 text-red-900 bg-red-200 transform duration-200 hover:bg-red-300"
+              class="block px-4 py-2 text-red-900 bg-red-200 transform duration-200 hover:bg-red-300 focus:bg-red-300"
               role="menuitem"
               >Destructive</a
             >
