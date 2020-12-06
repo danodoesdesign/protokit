@@ -11,6 +11,12 @@
   "LazyDropdownButton": {
     "description": "Auto imported from components/DropdownButton.vue"
   },
+  "Select": {
+    "description": "Auto imported from components/Select.vue"
+  },
+  "LazySelect": {
+    "description": "Auto imported from components/Select.vue"
+  },
   "TextArea": {
     "description": "Auto imported from components/TextArea.vue"
   },

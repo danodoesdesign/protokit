@@ -1,7 +1,7 @@
 <template>
   <div class="container py-10 flex flex-col">
     <h2 class="mb-8">Typography</h2>
-    <div class="w-full p-10 mb-20 bg-white">
+    <div class="w-full p-10 mb-20 bg-white shadow-xl">
       <h1>Heading 1</h1>
       <h2>Heading 2</h2>
       <h3>Heading 3</h3>
@@ -14,7 +14,7 @@
     </div>
 
     <h2 class="mb-8">Buttons</h2>
-    <div class="w-full p-10 mb-20 bg-white">
+    <div class="w-full p-10 mb-20 bg-white shadow-xl">
       <Button class="mb-4" :primary="true" label="primary button" />
       <Button class="mb-4" :secondary="true" label="secondary button" />
       <Button class="mb-4" :tertiary="true" label="tertiary button" />
@@ -22,7 +22,7 @@
     </div>
 
     <h2 class="mb-8">Inputs</h2>
-    <div class="w-full p-10 mb-20 bg-white">
+    <div class="w-full p-10 mb-20 bg-white shadow-xl">
       <div class="w-full grid grid-cols-3">
         <div class="col-span-1">
           <TextField
@@ -56,6 +56,23 @@
             label="Text area (disabled)"
             hint="This is a good spot for text"
             placeholder="Type your text here"
+            :disabled="true"
+          />
+        </div>
+      </div>
+
+      <div class="w-full grid grid-cols-3">
+        <div class="col-span-1">
+          <Select
+            class="mb-4"
+            label="Select"
+            hint="This is a good spot for text"
+            :disabled="false"
+          />
+          <Select
+            class="mb-4"
+            label="Select (disabled)"
+            hint="This is a good spot for text"
             :disabled="true"
           />
         </div>

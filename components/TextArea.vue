@@ -1,26 +1,28 @@
 <template>
   <div class="w-full grid grid-cols-1">
-      <div class="col-span-1">
+    <div class="col-span-1">
+      <label for="text_area" class="block font-bold">{{ label }}</label>
+      <p class="text-gray-800 mb-1">{{ hint }}</p>
 
-        <label for="text_area" class="block font-bold">{{ label }}</label>
-        <p class="text-gray-800 mb-1">{{ hint }}</p>
+      <textarea
+        v-show="!disabled"
+        rows="3"
+        :placeholder="placeholder"
+        name="text_area"
+        id="text_area"
+      >
+      </textarea>
 
-        <textarea v-show="!disabled"
-          rows="3"
-          :placeholder="placeholder"
-          name="text_area"
-          id="text_area"
-        /></textarea>
-
-        <textarea  v-show="disabled"
+      <textarea
+        v-show="disabled"
         disabled
         class="disabled resize-none"
-          rows="3"
-          name="text_area"
-          id="text_area"
-        /></textarea>
-
-      </div>
+        rows="3"
+        name="text_area"
+        id="text_area"
+      >
+      </textarea>
+    </div>
   </div>
 </template>
 
