@@ -4,5 +4,23 @@
   },
   "LazyButton": {
     "description": "Auto imported from components/Button.vue"
+  },
+  "DropdownButton": {
+    "description": "Auto imported from components/DropdownButton.vue"
+  },
+  "LazyDropdownButton": {
+    "description": "Auto imported from components/DropdownButton.vue"
+  },
+  "TextArea": {
+    "description": "Auto imported from components/TextArea.vue"
+  },
+  "LazyTextArea": {
+    "description": "Auto imported from components/TextArea.vue"
+  },
+  "TextField": {
+    "description": "Auto imported from components/TextField.vue"
+  },
+  "LazyTextField": {
+    "description": "Auto imported from components/TextField.vue"
   }
 }

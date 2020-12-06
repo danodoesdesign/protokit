@@ -36,7 +36,7 @@ export default {
   @apply px-6 py-3 underline font-bold border-gray-900 bg-white border-4 transform duration-200;
   &:hover,
   &:focus {
-    @apply no-underline bg-gray-300 shadow-md;
+    @apply no-underline bg-gray-300;
   }
 }
 .btn-tertiary {
