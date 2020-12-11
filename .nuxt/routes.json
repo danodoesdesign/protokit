@@ -1,5 +1,12 @@
 [
   {
+    "name": "form",
+    "path": "/form",
+    "component": "/Users/danielohara/Documents/Development/Personal/boilerplato/pages/form.vue",
+    "chunkName": "pages/form",
+    "_name": "_70348c40"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "/Users/danielohara/Documents/Development/Personal/boilerplato/pages/index.vue",

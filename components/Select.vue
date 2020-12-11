@@ -1,16 +1,10 @@
 <template>
-  <div class="w-full grid grid-cols-1">
+  <div class="w-full grid grid-cols-1 mb-8">
     <div class="col-span-1">
       <label for="select" class="block font-bold">{{ label }}</label>
-      <p class="text-gray-800 mb-1">{{ hint }}</p>
+      <p class="text-gray-800 mb-2">{{ hint }}</p>
       <div class="flex flex-row">
-        <select
-          v-show="!disabled"
-          type="text"
-          :placeholder="placeholder"
-          name="select"
-          id="select"
-        >
+        <select v-show="!disabled" type="text" name="select" id="select">
           <option value="First">First</option>
           <option value="Second">Second</option>
           <option value="Third">Third</option>

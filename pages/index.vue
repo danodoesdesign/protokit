@@ -1,5 +1,9 @@
 <template>
   <div class="container py-10 flex flex-col">
+    <h2 class="mb-8">Examples</h2>
+    <div class="w-full p-10 mb-20 bg-white shadow-xl">
+      <NuxtLink to="/form">A form</NuxtLink>
+    </div>
     <h2 class="mb-8">Typography</h2>
     <div class="w-full p-10 mb-20 bg-white shadow-xl">
       <h1>Heading 1</h1>
@@ -82,7 +86,6 @@
 </template>
 
 <script>
-export default {};
 </script>
 
 <style>

@@ -104,10 +104,10 @@ export default {
 
 <style lang="postcss" scoped>
 button {
-  @apply px-6 py-3 underline font-bold border-gray-900 bg-white border-4 transform duration-200;
+  @apply px-6 py-3 no-underline font-bold border-gray-900 bg-white border-4 transform duration-200;
   &:hover,
   &:focus {
-    @apply no-underline bg-gray-300;
+    @apply underline bg-gray-300;
   }
 }
 </style>

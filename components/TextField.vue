@@ -2,7 +2,7 @@
   <div class="w-full grid grid-cols-1">
     <div class="col-span-1">
       <label for="text_field" class="block font-bold">{{ label }}</label>
-      <p class="text-gray-800 mb-1">{{ hint }}</p>
+      <p class="text-gray-800 mb-2">{{ hint }}</p>
 
       <input
         v-show="!disabled"
@@ -42,7 +42,9 @@ label {
 }
 
 input {
-  @apply border-gray-900 border-4 px-3 py-3 block w-full transform duration-200;
+  -webkit-appearance: none;
+  border-radius: 0; /*mobile safari fix*/
+  @apply border-gray-900 border-4 px-3 py-3 block w-full transform duration-200 mb-8;
   &:hover {
     @apply bg-gray-300;
   }
@@ -57,6 +59,8 @@ input {
 }
 
 input.disabled {
+  -webkit-appearance: none;
+  border-radius: 0; /*mobile safari fix*/
   @apply bg-gray-600;
   &:hover {
     @apply cursor-not-allowed;
