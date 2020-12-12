@@ -4,6 +4,7 @@ import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
 const _636c052a = () => interopDefault(import('../pages/agents.vue' /* webpackChunkName: "pages/agents" */))
+const _14796fee = () => interopDefault(import('../pages/cudgewa.vue' /* webpackChunkName: "pages/cudgewa" */))
 const _70348c40 = () => interopDefault(import('../pages/form.vue' /* webpackChunkName: "pages/form" */))
 const _1a138eba = () => interopDefault(import('../pages/northbourne.vue' /* webpackChunkName: "pages/northbourne" */))
 const _c91c9334 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
@@ -28,6 +29,10 @@ export const routerOptions = {
     path: "/agents",
     component: _636c052a,
     name: "agents"
+  }, {
+    path: "/cudgewa",
+    component: _14796fee,
+    name: "cudgewa"
   }, {
     path: "/form",
     component: _70348c40,

@@ -6,18 +6,19 @@
     <div class="bg-white w-full px-10 py-10 shadow-xl mt-10">
       <img
         class="h-64 w-full object-cover"
-        src="https://source.unsplash.com/9LMRQdVv7hw/1000x1000"
+        src="https://source.unsplash.com/_TPTXZd9mOo/1000x1000"
       />
-      <div class="flex flex-row justify-between items-center">
-        <div class="flex flex-col">
-          <h3 class="mt-10">Northbourne Avenue</h3>
-          <p class="font-alt">House</p>
-          <Badge type="success">Leased until June 2022</Badge>
+      <div class="grid grid-cols-6">
+        <div class="col-span-3 flex flex-col">
+          <h3 class="mt-10">Cudgewa Lane</h3>
+          <p class="font-alt">Townhouse</p>
+          <Badge type="progress">Ready to list</Badge>
         </div>
-        <div class="flex flex-row-reverse">
-          <DropdownButton label="Manage">
-            <DropdownItem label="Organise maintennence" />
-            <DropdownItem label="Evict tenants 😈🔪😡" type="bad" />
+        <div class="col-span-3 flex flex-row-reverse items-center">
+          <Button :primary="true" label="List online now" />
+          <DropdownButton label="Edit" class="mr-5">
+            <DropdownItem label="Change details" />
+            <DropdownItem label="Remove" type="bad" />
           </DropdownButton>
         </div>
       </div>

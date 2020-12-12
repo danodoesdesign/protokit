@@ -22,19 +22,14 @@
           <div
             class="col-span-1 flex flex-col transform hover:-translate-y-1 hover:bg-gray-100 cursor-pointer duration-200 hover:shadow-2xl bg-white shadow-xl"
           >
-            <div class="w-full">
+            <div class="p-6 mb-6">
               <img
-                class="h-32 absolute w-full object-cover translate transform z-10"
-                src="https://source.unsplash.com/_TPTXZd9mOo/500x600"
+                class="h-32 mb-4 w-full object-cover translate transform z-10"
+                src="https://source.unsplash.com/9LMRQdVv7hw/500x600"
               />
-              <div
-                class="absolute w-full h-32 bg-gray-300 z-0 animate-pulse delay-100"
-              ></div>
-            </div>
-            <div class="p-6 mb-6 mt-32">
               <h5>Northbourne Ave</h5>
               <p class="font-alt text-sm">House</p>
-              <Badge type="success">Has tenants until June 2022</Badge>
+              <Badge type="success">Leased until June 2022</Badge>
             </div>
           </div></NuxtLink
         >
@@ -42,19 +37,14 @@
           <div
             class="col-span-1 flex flex-col transform hover:-translate-y-1 hover:bg-gray-100 cursor-pointer duration-200 hover:shadow-2xl bg-white shadow-xl"
           >
-            <div class="w-full">
+            <div class="p-6 mb-6">
               <img
-                class="h-32 absolute w-full object-cover translate transform z-10"
-                src="https://source.unsplash.com/9LMRQdVv7hw/500x600"
+                class="h-32 mb-4 w-full object-cover translate transform z-10"
+                src="https://source.unsplash.com/_TPTXZd9mOo/500x600"
               />
-              <div
-                class="absolute w-full h-32 bg-gray-300 z-0 animate-pulse delay-100"
-              ></div>
-            </div>
-            <div class="p-6 mb-6 mt-32">
               <h5>Cudgewa Lane</h5>
               <p class="font-alt text-sm">Townhouse</p>
-              <Badge type="progress">Ready to list online</Badge>
+              <Badge type="progress">Ready to list</Badge>
             </div>
           </div></NuxtLink
         >

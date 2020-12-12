@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full grid grid-cols-1">
+  <div class="grid grid-cols-1">
     <div class="col-span-1">
       <div class="relative inline-block text-left">
         <div>
