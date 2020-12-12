@@ -71,10 +71,14 @@ p {
   @apply px-4 mb-0 py-2;
 }
 button {
+  outline: none;
   @apply px-6 py-3 no-underline font-bold border-gray-900 bg-white border-4 transform duration-200;
   &:hover,
   &:focus {
     @apply underline bg-gray-300;
+  }
+  &:focus {
+    @apply shadow-outline;
   }
 }
 </style>

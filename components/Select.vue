@@ -57,6 +57,7 @@ label {
 
 select {
   appearance: none;
+  outline: none;
 
   @apply border-gray-900 border-4  rounded-none px-3 py-3 block w-full transform duration-200 cursor-pointer;
   &:hover {
@@ -64,7 +65,7 @@ select {
   }
   ,
   &:focus {
-    @apply border-indigo-500;
+    @apply shadow-outline;
   }
 }
 

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <a :href="linkTo">
+    <a :href="linkTo" aria-hidden="true" tabindex="-1">
       <button v-show="primary" class="flex flex-row btn-primary">
         {{ label }}
       </button>
@@ -29,24 +29,36 @@ export default {
 
 <style lang="postcss" scoped>
 .btn-primary {
+  outline: none;
   @apply px-6 py-3 no-underline font-bold border-gray-900 bg-gray-900 text-white border-4 transform duration-200;
   &:hover,
   &:focus {
-    @apply underline bg-gray-800 shadow-md transform -translate-y-1;
+    @apply underline bg-gray-800 border-gray-800 shadow-md transform -translate-y-1;
+  }
+  &:focus {
+    @apply shadow-outline;
   }
 }
 .btn-secondary {
+  outline: none;
   @apply px-6 py-3 no-underline font-bold border-gray-900 bg-white border-4 transform duration-200;
   &:hover,
   &:focus {
     @apply underline bg-gray-300;
   }
+  &:focus {
+    @apply shadow-outline;
+  }
 }
 .btn-tertiary {
+  outline: none;
   @apply px-6 py-3 no-underline font-bold border-white bg-white border-4 transform duration-200;
   &:hover,
   &:focus {
     @apply underline bg-gray-300  border-gray-300;
+  }
+  &:focus {
+    @apply shadow-outline;
   }
 }
 a {

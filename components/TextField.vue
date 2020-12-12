@@ -42,6 +42,7 @@ label {
 }
 
 input {
+  outline: none;
   -webkit-appearance: none;
   border-radius: 0; /*mobile safari fix*/
   @apply border-gray-900 border-4 px-3 py-3 block w-full transform duration-200 mb-8;
@@ -50,7 +51,7 @@ input {
   }
   ,
   &:focus {
-    @apply border-indigo-500;
+    @apply shadow-outline;
   }
 }
 

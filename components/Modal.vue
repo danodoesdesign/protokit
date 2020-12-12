@@ -22,7 +22,6 @@ export default {
   name: "modal",
   props: {
     title: String,
-    body: String,
     buttonLabel: String,
   },
 
