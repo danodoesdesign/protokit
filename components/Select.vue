@@ -5,9 +5,7 @@
       <p class="text-gray-800 mb-2">{{ hint }}</p>
       <div class="flex flex-row">
         <select v-show="!disabled" type="text" name="select" id="select">
-          <option value="First">First</option>
-          <option value="Second">Second</option>
-          <option value="Third">Third</option>
+          <slot></slot>
         </select>
 
         <select
@@ -18,9 +16,7 @@
           name="select"
           id="select"
         >
-          <option value="First">First</option>
-          <option value="Second">Second</option>
-          <option value="Third">Third</option>
+          <slot></slot>
         </select>
         <div class="flex flex-col justify-center pointer-events-none">
           <!-- Heroicon name: selector -->

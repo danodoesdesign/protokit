@@ -28,7 +28,11 @@
         <Select
           label="Are you an Australian Citizen?"
           hint="You don't need to be honest"
-        />
+        >
+          <option>No, not really</option>
+          <option>I try to be!</option>
+          <option>아니요 저는 한국인입니다</option>
+        </Select>
         <TextArea
           label="Describe your passions"
           hint="Try to keep it to 2 paragraphs"

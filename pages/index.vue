@@ -77,13 +77,18 @@
             label="Select"
             hint="This is a good spot for text"
             :disabled="false"
-          />
+          >
+            <option>TestFirst</option>
+            <option>TestSecond</option>
+          </Select>
           <Select
             class="mb-4"
             label="Select (disabled)"
             hint="This is a good spot for text"
             :disabled="true"
-          />
+          >
+            <option>TestFirst2</option>
+          </Select>
         </div>
       </div>
     </div>
