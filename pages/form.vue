@@ -5,7 +5,10 @@
         <NuxtLink to="/" class="no-underline"
           ><Button :tertiary="true" label="← Go back"
         /></NuxtLink>
-        <h1>Form</h1>
+        <div class="flex flex-row justify-between items-center">
+          <h1>Form</h1>
+          <Badge>Latest — version 6.8.4</Badge>
+        </div>
         <p>
           We need your details so we can do this for you. You don't have to do
           this right now, but it will help later.

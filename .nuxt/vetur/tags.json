@@ -1,4 +1,10 @@
 {
+  "Badge": {
+    "description": "Auto imported from components/Badge.vue"
+  },
+  "LazyBadge": {
+    "description": "Auto imported from components/Badge.vue"
+  },
   "Button": {
     "description": "Auto imported from components/Button.vue"
   },

@@ -1,3 +1,4 @@
+export { default as Badge } from '../../components/Badge.vue'
 export { default as Button } from '../../components/Button.vue'
 export { default as DropdownButton } from '../../components/DropdownButton.vue'
 export { default as DropdownItem } from '../../components/DropdownItem.vue'
@@ -6,6 +7,7 @@ export { default as Select } from '../../components/Select.vue'
 export { default as TextArea } from '../../components/TextArea.vue'
 export { default as TextField } from '../../components/TextField.vue'
 
+export const LazyBadge = import('../../components/Badge.vue' /* webpackChunkName: "components/Badge" */).then(c => c.default || c)
 export const LazyButton = import('../../components/Button.vue' /* webpackChunkName: "components/Button" */).then(c => c.default || c)
 export const LazyDropdownButton = import('../../components/DropdownButton.vue' /* webpackChunkName: "components/DropdownButton" */).then(c => c.default || c)
 export const LazyDropdownItem = import('../../components/DropdownItem.vue' /* webpackChunkName: "components/DropdownItem" */).then(c => c.default || c)
