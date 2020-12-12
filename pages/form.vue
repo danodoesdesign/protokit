@@ -2,7 +2,7 @@
   <div class="container py-10 flex flex-col">
     <div class="w-full p-10 mb-20 bg-white shadow-xl grid grid-cols-4">
       <div class="col-span-4 md:col-span-3 lg:col-span-2">
-        <NuxtLink class="w-auto no-underline" to="/"
+        <NuxtLink to="/" class="no-underline"
           ><Button :tertiary="true" label="← Go back"
         /></NuxtLink>
         <h1>Form</h1>
@@ -35,7 +35,12 @@
         />
         <div class="w-full flex flex-row justify-between">
           <Button :tertiary="true" label="← Back a step" />
-          <Button class="self end" :primary="true" label="Continue →" />
+          <Button
+            class="self end"
+            :primary="true"
+            label="Continue →"
+            linkTo="http://www.google.com"
+          />
         </div>
       </div>
     </div>

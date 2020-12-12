@@ -1,14 +1,16 @@
 <template>
   <div>
-    <button v-show="primary" class="flex flex-row btn-primary">
-      {{ label }}
-    </button>
-    <button v-show="secondary" class="flex flex-row btn-secondary">
-      {{ label }}
-    </button>
-    <button v-show="tertiary" class="flex flex-row btn-tertiary">
-      {{ label }}
-    </button>
+    <a :href="linkTo">
+      <button v-show="primary" class="flex flex-row btn-primary">
+        {{ label }}
+      </button>
+      <button v-show="secondary" class="flex flex-row btn-secondary">
+        {{ label }}
+      </button>
+      <button v-show="tertiary" class="flex flex-row btn-tertiary">
+        {{ label }}
+      </button>
+    </a>
   </div>
 </template>
 
@@ -20,7 +22,7 @@ export default {
     primary: Boolean,
     secondary: Boolean,
     tertiary: Boolean,
-    onClick: Function,
+    linkTo: String,
   },
 };
 </script>
@@ -46,5 +48,8 @@ export default {
   &:focus {
     @apply underline bg-gray-300  border-gray-300;
   }
+}
+a {
+  @apply no-underline;
 }
 </style>
