@@ -1,10 +1,24 @@
 [
   {
+    "name": "agents",
+    "path": "/agents",
+    "component": "/Users/danielohara/Documents/Development/Personal/boilerplato/pages/agents.vue",
+    "chunkName": "pages/agents",
+    "_name": "_636c052a"
+  },
+  {
     "name": "form",
     "path": "/form",
     "component": "/Users/danielohara/Documents/Development/Personal/boilerplato/pages/form.vue",
     "chunkName": "pages/form",
     "_name": "_70348c40"
+  },
+  {
+    "name": "northbourne",
+    "path": "/northbourne",
+    "component": "/Users/danielohara/Documents/Development/Personal/boilerplato/pages/northbourne.vue",
+    "chunkName": "pages/northbourne",
+    "_name": "_1a138eba"
   },
   {
     "name": "index",

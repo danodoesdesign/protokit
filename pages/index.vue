@@ -1,8 +1,11 @@
 <template>
   <div class="container py-10 flex flex-col">
     <h2 class="mb-8">Examples</h2>
-    <div class="w-full p-10 mb-20 bg-white shadow-xl">
-      <NuxtLink to="/form">A form</NuxtLink>
+    <div
+      class="w-full p-10 mb-20 bg-white shadow-xl flex flex-col justify-start"
+    >
+      <NuxtLink class="block" to="/form">A form</NuxtLink>
+      <NuxtLink to="/agents">Make agents redundant</NuxtLink>
     </div>
     <h2 class="mb-8">Typography</h2>
     <div class="w-full p-10 mb-20 bg-white shadow-xl">

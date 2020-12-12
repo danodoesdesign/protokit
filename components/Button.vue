@@ -41,7 +41,7 @@ export default {
 }
 .btn-secondary {
   outline: none;
-  @apply px-6 py-3 no-underline font-bold border-gray-900 bg-white border-4 transform duration-200;
+  @apply px-6 py-3 no-underline font-bold border-gray-900  border-4 transform duration-200;
   &:hover,
   &:focus {
     @apply underline bg-gray-300;
@@ -52,7 +52,7 @@ export default {
 }
 .btn-tertiary {
   outline: none;
-  @apply px-6 py-3 no-underline font-bold border-white bg-white border-4 transform duration-200;
+  @apply px-6 py-3 no-underline font-bold border-transparent border-4 transform duration-200;
   &:hover,
   &:focus {
     @apply underline bg-gray-300  border-gray-300;
