@@ -1,2 +1,6 @@
 
 assets/global-styles/.DS_Store
+dist/
+node_modules/
+.nuxt/
+.DS_Store

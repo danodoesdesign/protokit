@@ -1,4 +1,3 @@
-
 <template>
   <div class="container py-10 flex flex-col">
     <div class="w-full p-10 mb-20 bg-white shadow-xl grid grid-cols-4">
