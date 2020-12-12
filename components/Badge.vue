@@ -15,7 +15,7 @@
         <slot></slot>
       </div>
     </div>
-    <div v-else>
+    <div v-if="type != 'success' && type != 'fail' && type != 'progress'">
       <div class="badge">
         <slot></slot>
       </div>
@@ -33,7 +33,7 @@ export default {
 
 <style lang="postcss" scoped>
 .badge {
-  @apply bg-gray-200 flex flex-col justify-center px-3 h-8 text-gray-900 text-sm;
+  @apply bg-gray-200 inline-block justify-center px-3 py-1 text-gray-900 text-sm;
 
   &.success {
     @apply bg-green-200 text-green-900;

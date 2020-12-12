@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <a :href="linkTo" aria-hidden="true" tabindex="-1">
+  <div class="inline-block">
+    <a class="inline-block" :href="linkTo" aria-hidden="true" tabindex="-1">
       <button v-show="primary" class="flex flex-row btn-primary">
         {{ label }}
       </button>

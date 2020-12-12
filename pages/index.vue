@@ -18,7 +18,7 @@
     </div>
 
     <h2 class="mb-8">Buttons</h2>
-    <div class="w-full p-10 mb-20 bg-white shadow-xl">
+    <div class="w-full p-10 mb-20 bg-white shadow-xl flex flex-col">
       <Button class="mb-4" :primary="true" label="primary button" />
       <Button class="mb-4" :secondary="true" label="secondary button" />
       <Button class="mb-4" :tertiary="true" label="tertiary button" />
@@ -92,12 +92,46 @@
         </div>
       </div>
     </div>
+    <h2 class="mb-8">Status</h2>
+    <div class="w-full p-10 mb-20 bg-white shadow-xl flex flex-col">
+      <Badge class="mb-4">Default</Badge>
+      <Badge class="mb-4" type="progress">In progress</Badge>
+      <Badge class="mb-4" type="success">Successful</Badge>
+      <Badge class="mb-4" type="fail">Failed</Badge>
+    </div>
+    <h2 class="mb-8">Modal</h2>
+    <div class="w-full p-10 mb-20 bg-white shadow-xl">
+      <Button
+        :primary="true"
+        label="Click to open modal"
+        @click.native="showModal"
+      />
+      <Modal
+        v-show="isModalVisible"
+        @close="closeModal"
+        title="Test modal"
+        buttonLabel="Very good"
+        >Here is some content</Modal
+      >
+    </div>
   </div>
 </template>
 
 <script>
+import Badge from "../components/Badge.vue";
 export default {
+  data() {
+    return {
+      isModalVisible: false,
+    };
+  },
   methods: {
+    showModal() {
+      this.isModalVisible = true;
+    },
+    closeModal() {
+      this.isModalVisible = false;
+    },
     test() {
       console.log("test() was run.");
     },
