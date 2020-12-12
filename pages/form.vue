@@ -60,7 +60,7 @@
   </div>
 </template>
 
-<!-- Modal logic -->
+<!-- Modal logic ========== -->
 <script>
 export default {
   data() {
@@ -78,7 +78,7 @@ export default {
   },
 };
 </script>
-<!-- Modal logic END -->
+<!-- Modal logic END ========== -->
 
 <style>
 .container {

@@ -29,17 +29,6 @@
             </svg>
           </button>
         </div>
-
-        <!--
-    Dropdown panel, show/hide based on dropdown state.
-
-    Entering: "transition ease-out duration-100"
-      From: "transform opacity-0 scale-95"
-      To: "transform opacity-100 scale-100"
-    Leaving: "transition ease-in duration-75"
-      From: "transform opacity-100 scale-100"
-      To: "transform opacity-0 scale-95"
-  -->
         <div
           id="dropdown_menu"
           style="display: none"
@@ -48,32 +37,7 @@
           aria-orientation="vertical"
           aria-labelledby="options-menu"
         >
-          <div class="">
-            <a
-              href="#"
-              class="block px-4 py-2 transform duration-200 hover:bg-gray-300 focus:bg-gray-300"
-              role="menuitem"
-              >Edit</a
-            >
-            <a
-              href="#"
-              class="block px-4 py-2 transform duration-200 hover:bg-gray-300 focus:bg-gray-300"
-              role="menuitem"
-              >Duplicate</a
-            >
-            <a
-              href="#"
-              class="block px-4 py-2 text-green-900 bg-green-200 transform duration-200 hover:bg-green-300 focus:bg-green-300"
-              role="menuitem"
-              >Positive</a
-            >
-            <a
-              href="#"
-              class="block px-4 py-2 text-red-900 bg-red-200 transform duration-200 hover:bg-red-300 focus:bg-red-300"
-              role="menuitem"
-              >Destructive</a
-            >
-          </div>
+          <slot></slot>
         </div>
       </div>
     </div>
@@ -103,6 +67,9 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
+p {
+  @apply px-4 mb-0 py-2;
+}
 button {
   @apply px-6 py-3 no-underline font-bold border-gray-900 bg-white border-4 transform duration-200;
   &:hover,

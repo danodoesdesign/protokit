@@ -11,6 +11,12 @@
   "LazyDropdownButton": {
     "description": "Auto imported from components/DropdownButton.vue"
   },
+  "DropdownItem": {
+    "description": "Auto imported from components/DropdownItem.vue"
+  },
+  "LazyDropdownItem": {
+    "description": "Auto imported from components/DropdownItem.vue"
+  },
   "Modal": {
     "description": "Auto imported from components/Modal.vue"
   },

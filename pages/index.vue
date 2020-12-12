@@ -22,7 +22,12 @@
       <Button class="mb-4" :primary="true" label="primary button" />
       <Button class="mb-4" :secondary="true" label="secondary button" />
       <Button class="mb-4" :tertiary="true" label="tertiary button" />
-      <DropdownButton label="dropdown button" />
+      <DropdownButton label="dropdown button">
+        <p>Choose one reason at a time</p>
+        <DropdownItem @click.native="test()" label="EditTest" type="bad" />
+        <DropdownItem label="EditTest2" type="good" />
+        <DropdownItem label="EditTest3" />
+      </DropdownButton>
     </div>
 
     <h2 class="mb-8">Inputs</h2>
@@ -86,6 +91,13 @@
 </template>
 
 <script>
+export default {
+  methods: {
+    test() {
+      console.log("test() was run.");
+    },
+  },
+};
 </script>
 
 <style>
