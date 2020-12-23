@@ -33,6 +33,27 @@
       </DropdownButton>
     </div>
 
+    <h2 class="mb-8">Checkbox and Radios</h2>
+    <div class="w-full p-10 mb-20 bg-white shadow-xl">
+      <FieldGroup
+        label="Choose an option"
+        hint="Choose literally anything it doesn't matter."
+        class="mb-10"
+      >
+        <Radio id="01" group="thisGroup" text="This option" />
+        <Radio id="02" group="thisGroup" text="Second" />
+        <Radio id="03" group="thisGroup" text="Third" />
+      </FieldGroup>
+      <FieldGroup
+        label="Choose an option"
+        hint="Choose literally anything it doesn't matter."
+      >
+        <Checkbox id="04" group="thatGroup" text="This option" />
+        <Checkbox id="05" group="thatGroup" text="Second" />
+        <Checkbox id="06" group="thatGroup" text="Third" />
+      </FieldGroup>
+    </div>
+
     <h2 class="mb-8">Inputs</h2>
     <div class="w-full p-10 mb-20 bg-white shadow-xl">
       <div class="w-full grid grid-cols-3">
@@ -121,7 +142,6 @@
 </template>
 
 <script>
-import Badge from "../components/Badge.vue";
 export default {
   data() {
     return {
