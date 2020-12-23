@@ -35,6 +35,18 @@
   "LazyFieldGroup": {
     "description": "Auto imported from components/FieldGroup.vue"
   },
+  "Header": {
+    "description": "Auto imported from components/Header.vue"
+  },
+  "LazyHeader": {
+    "description": "Auto imported from components/Header.vue"
+  },
+  "HeaderItem": {
+    "description": "Auto imported from components/HeaderItem.vue"
+  },
+  "LazyHeaderItem": {
+    "description": "Auto imported from components/HeaderItem.vue"
+  },
   "Modal": {
     "description": "Auto imported from components/Modal.vue"
   },

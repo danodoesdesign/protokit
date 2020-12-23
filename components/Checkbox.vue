@@ -38,7 +38,6 @@
 export default {
   props: {
     id: Number,
-    group: String,
     text: String,
   },
 
