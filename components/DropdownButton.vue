@@ -57,12 +57,14 @@ export default {
       if (dropdownMenu.style.display === "none") {
         dropdownMenu.style.display = "block";
         chevron.classList.add("rotate-180");
+        dropdownMenu.focus();
       } else {
         dropdownMenu.style.display = "none";
         chevron.classList.remove("rotate-180");
       }
     },
   },
+  events: {},
 };
 </script>
 

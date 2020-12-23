@@ -5,12 +5,36 @@
       <HeaderItem link="/form">Form example</HeaderItem>
     </Header>
     <div class="container py-10 flex flex-col">
-      <h2 class="mb-8">Examples</h2>
-      <div
-        class="w-full p-10 mb-20 bg-white shadow-xl flex flex-col justify-start"
-      >
-        <NuxtLink class="block" to="/form">A form</NuxtLink>
-        <NuxtLink to="/agents">Make agents redundant</NuxtLink>
+      <div class="flex flex-row justify-between w-full">
+        <h1 class="mb-10">dano does prototypes</h1>
+        <div class="flex-grow"></div>
+        <div class="flex flex-col items-end justify-center">
+          <Badge class="mb-3">TailwindCSS</Badge>
+          <Badge class="mb-3">Vue.js</Badge>
+          <Badge>NuxtJS</Badge>
+        </div>
+      </div>
+      <div class="w-2/3 mb-20">
+        <p>
+          Hi stranger! You've found what is, effectively, my own UI kit I've
+          created to help me learn more about Vue.js while having a practical
+          output.
+        </p>
+        <p>
+          I intend to use these basic elements alongside a carbon-copy Figma
+          library to freakin hyper-speed the creation of
+          <a href="">concept prototypes</a> in my work at
+          <a href="http://futurefriendly.team">Future Friendly</a>.
+        </p>
+        <p>
+          Parts of this are responsive, but for the purpose of rapidly
+          prototyping for concept testing we often control the device being
+          tested on. Thus, this a desktop-first tool set.
+        </p>
+        <p>
+          Feel free to use this if you so wish, can be sourced from
+          <a href="">Github</a>.
+        </p>
       </div>
       <h2 class="mb-8">Typography</h2>
       <div class="w-full p-10 mb-20 bg-white shadow-xl">
@@ -40,28 +64,30 @@
 
       <h2 class="mb-8">Checkbox and Radios</h2>
       <div class="w-full p-10 mb-20 bg-white shadow-xl">
-        <FieldGroup
-          label="Choose an option"
-          hint="Choose literally anything it doesn't matter."
-          class="mb-10"
-        >
-          <Radio id="01" group="thisGroup" text="This option" />
-          <Radio id="02" group="thisGroup" text="Second" />
-          <Radio id="03" group="thisGroup" text="Third" />
-        </FieldGroup>
-        <FieldGroup
-          label="Choose an option"
-          hint="Choose literally anything it doesn't matter."
-        >
-          <Checkbox id="04" text="This option" />
-          <Checkbox id="05" text="Second" />
-          <Checkbox id="06" text="Third" />
-        </FieldGroup>
+        <div class="w-1/3">
+          <FieldGroup
+            label="Choose an option"
+            hint="Choose literally anything it doesn't matter."
+            class="mb-10"
+          >
+            <Radio id="01" group="thisGroup" text="This option" />
+            <Radio id="02" group="thisGroup" text="Second" />
+            <Radio id="03" group="thisGroup" text="Third" />
+          </FieldGroup>
+          <FieldGroup
+            label="Choose an option"
+            hint="Choose literally anything it doesn't matter."
+          >
+            <Checkbox id="04" text="This option" />
+            <Checkbox id="05" text="Second" />
+            <Checkbox id="06" text="Third" />
+          </FieldGroup>
+        </div>
       </div>
 
       <h2 class="mb-8">Inputs</h2>
       <div class="w-full p-10 mb-20 bg-white shadow-xl">
-        <div class="w-full grid grid-cols-3">
+        <div class="w-full grid grid-cols-3 col-gap-6">
           <div class="col-span-1">
             <TextField
               class="mb-4"
@@ -70,6 +96,8 @@
               placeholder="Type your text here"
               :disabled="false"
             />
+          </div>
+          <div class="col-span-1">
             <TextField
               class="mb-4"
               label="Text field (disabled)"
@@ -80,7 +108,7 @@
           </div>
         </div>
 
-        <div class="w-full grid grid-cols-3">
+        <div class="w-full grid grid-cols-3 col-gap-6">
           <div class="col-span-1">
             <TextArea
               class="mb-4"
@@ -89,6 +117,8 @@
               placeholder="Type your text here"
               :disabled="false"
             />
+          </div>
+          <div class="col-span-1">
             <TextArea
               class="mb-4"
               label="Text area (disabled)"
@@ -99,7 +129,7 @@
           </div>
         </div>
 
-        <div class="w-full grid grid-cols-3">
+        <div class="w-full grid grid-cols-3 col-gap-6">
           <div class="col-span-1">
             <Select
               class="mb-4"
@@ -110,6 +140,8 @@
               <option>TestFirst</option>
               <option>TestSecond</option>
             </Select>
+          </div>
+          <div class="col-span-1">
             <Select
               class="mb-4"
               label="Select (disabled)"
@@ -121,7 +153,7 @@
           </div>
         </div>
       </div>
-      <h2 class="mb-8">Status</h2>
+      <h2 class="mb-8">Badges</h2>
       <div class="w-full p-10 mb-20 bg-white shadow-xl flex flex-col">
         <Badge class="mb-4">Default</Badge>
         <Badge class="mb-4" type="progress">In progress</Badge>
