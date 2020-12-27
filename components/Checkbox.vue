@@ -69,8 +69,8 @@ input[type="checkbox"] {
   position: absolute;
 }
 input[type="checkbox"] + label:before {
-  height: 12px;
-  width: 12px;
+  height: 11px;
+  width: 11px;
   margin-right: 10px;
   content: " ";
   display: inline-block;

@@ -1,4 +1,10 @@
 {
+  "Accordian": {
+    "description": "Auto imported from components/Accordian.vue"
+  },
+  "LazyAccordian": {
+    "description": "Auto imported from components/Accordian.vue"
+  },
   "Alert": {
     "description": "Auto imported from components/Alert.vue"
   },

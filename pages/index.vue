@@ -12,7 +12,7 @@
     />
     <div class="container py-10 px-5 lg:px-0 flex flex-col">
       <div class="flex flex-row justify-between w-full">
-        <h1 class="mb-10">dano does prototypes</h1>
+        <h1 class="mb-10">Protokit</h1>
       </div>
       <div class="w-2/3 mb-20">
         <p>
@@ -49,6 +49,12 @@
       <h2 class="mb-8">Buttons</h2>
       <div class="w-full p-10 mb-20 bg-white shadow-xl flex flex-col">
         <Button class="mb-4" type="primary" label="primary button" />
+        <Button
+          class="mb-4"
+          type="primary"
+          :disabled="true"
+          label="primary disabled"
+        />
         <Button class="mb-4" type="secondary" label="secondary button" />
         <Button class="mb-4" type="tertiary" label="tertiary button" />
         <DropdownButton label="dropdown button">
@@ -177,6 +183,13 @@
           buttonLabel="Very good"
           >Here is some content</Modal
         >
+      </div>
+      <h2 class="mb-8">Accordian</h2>
+      <div class="w-full p-10 mb-20 bg-white shadow-xl flex flex-col">
+        <Accordian class="md:w-2/3" title="Test title">
+          <h6>You should do this instead</h6>
+          <p>Rather than the thing you were going to do.</p>
+        </Accordian>
       </div>
     </div>
   </div>

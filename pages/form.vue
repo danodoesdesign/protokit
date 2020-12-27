@@ -81,7 +81,6 @@
               :disabled="true"
               type="primary"
               label="Continue →"
-              linkTo="http://www.google.com"
             />
           </div>
         </div>

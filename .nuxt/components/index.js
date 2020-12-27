@@ -1,3 +1,4 @@
+export { default as Accordian } from '../../components/Accordian.vue'
 export { default as Alert } from '../../components/Alert.vue'
 export { default as Badge } from '../../components/Badge.vue'
 export { default as Breadcrumbs } from '../../components/Breadcrumbs.vue'
@@ -14,6 +15,7 @@ export { default as Select } from '../../components/Select.vue'
 export { default as TextArea } from '../../components/TextArea.vue'
 export { default as TextField } from '../../components/TextField.vue'
 
+export const LazyAccordian = import('../../components/Accordian.vue' /* webpackChunkName: "components/Accordian" */).then(c => c.default || c)
 export const LazyAlert = import('../../components/Alert.vue' /* webpackChunkName: "components/Alert" */).then(c => c.default || c)
 export const LazyBadge = import('../../components/Badge.vue' /* webpackChunkName: "components/Badge" */).then(c => c.default || c)
 export const LazyBreadcrumbs = import('../../components/Breadcrumbs.vue' /* webpackChunkName: "components/Breadcrumbs" */).then(c => c.default || c)

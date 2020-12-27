@@ -61,6 +61,9 @@ export default {
   &:focus {
     @apply cursor-not-allowed;
   }
+  &:focus {
+    @apply shadow-none;
+  }
 }
 
 .btn-secondary {
@@ -79,7 +82,7 @@ export default {
   @apply px-6 py-3 no-underline font-bold border-transparent border-4 transform duration-200;
   &:hover,
   &:focus {
-    @apply underline bg-gray-600   bg-opacity-25;
+    @apply underline bg-gray-600 bg-opacity-25;
   }
   &:focus {
     @apply shadow-outline;

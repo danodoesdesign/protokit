@@ -3,21 +3,18 @@
     "name": "form",
     "path": "/form",
     "component": "/Users/danielohara/Documents/Development/Personal/boilerplato/pages/form.vue",
-    "chunkName": "pages/form",
-    "_name": "_70348c40"
+    "chunkName": "pages/form"
   },
   {
     "name": "template",
     "path": "/template",
     "component": "/Users/danielohara/Documents/Development/Personal/boilerplato/pages/template.vue",
-    "chunkName": "pages/template",
-    "_name": "_2a3866d4"
+    "chunkName": "pages/template"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/danielohara/Documents/Development/Personal/boilerplato/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_c91c9334"
+    "chunkName": "pages/index"
   }
 ]

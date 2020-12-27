@@ -82,6 +82,7 @@ li:after {
   font-size: 1.2rem;
   @apply text-gray-900 mr-2 ml-1;
 }
+
 li:last-child:after {
   content: "";
 }
