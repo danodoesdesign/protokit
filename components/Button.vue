@@ -1,13 +1,18 @@
 <template>
   <div class="inline-block">
     <a class="inline-block" :href="linkTo" aria-hidden="true" tabindex="-1">
-      <button v-show="primary" class="flex flex-row btn-primary">
+      <button
+        v-show="
+          type === 'primary' || (type != 'secondary' && type != 'tertiary')
+        "
+        class="flex flex-row btn-primary"
+      >
         {{ label }}
       </button>
-      <button v-show="secondary" class="flex flex-row btn-secondary">
+      <button v-show="type === 'secondary'" class="flex flex-row btn-secondary">
         {{ label }}
       </button>
-      <button v-show="tertiary" class="flex flex-row btn-tertiary">
+      <button v-show="type === 'tertiary'" class="flex flex-row btn-tertiary">
         {{ label }}
       </button>
     </a>
@@ -19,9 +24,7 @@ export default {
   name: "Button",
   props: {
     label: String,
-    primary: Boolean,
-    secondary: Boolean,
-    tertiary: Boolean,
+    type: String,
     linkTo: String,
   },
 };

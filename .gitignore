@@ -5,3 +5,4 @@ node_modules/
 .nuxt/
 .DS_Store
 jsconfig.json
+.DS_Store

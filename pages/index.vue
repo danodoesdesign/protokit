@@ -22,8 +22,8 @@
         </p>
         <p>
           I intend to use these basic elements alongside a carbon-copy Figma
-          library to freakin hyper-speed the creation of
-          <a href="">concept prototypes</a> in my work at
+          library to freakin hyper-speed the creation of concept prototypes in
+          my work at
           <a href="http://futurefriendly.team">Future Friendly</a>.
         </p>
         <p>
@@ -31,10 +31,7 @@
           prototyping for concept testing we often control the device being
           tested on. Thus, this a desktop-first tool set.
         </p>
-        <p>
-          Feel free to use this if you so wish, can be sourced from
-          <a href="">Github</a>.
-        </p>
+        <p>Soon to be available on Github.</p>
       </div>
       <h2 class="mb-8">Typography</h2>
       <div class="w-full p-10 mb-20 bg-white shadow-xl">
@@ -51,9 +48,9 @@
 
       <h2 class="mb-8">Buttons</h2>
       <div class="w-full p-10 mb-20 bg-white shadow-xl flex flex-col">
-        <Button class="mb-4" :primary="true" label="primary button" />
-        <Button class="mb-4" :secondary="true" label="secondary button" />
-        <Button class="mb-4" :tertiary="true" label="tertiary button" />
+        <Button class="mb-4" type="primary" label="primary button" />
+        <Button class="mb-4" type="secondary" label="secondary button" />
+        <Button class="mb-4" type="tertiary" label="tertiary button" />
         <DropdownButton label="dropdown button">
           <p>Choose one reason at a time</p>
           <DropdownItem @click.native="test()" label="EditTest" type="bad" />
