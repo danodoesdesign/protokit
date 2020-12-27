@@ -5,7 +5,7 @@
       @click="makeActive()"
     >
       <input
-        class="form-radio"
+        class="form-radio cursor-pointer"
         :id="id"
         ref="theRadio"
         type="radio"
