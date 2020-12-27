@@ -1,4 +1,10 @@
 {
+  "Alert": {
+    "description": "Auto imported from components/Alert.vue"
+  },
+  "LazyAlert": {
+    "description": "Auto imported from components/Alert.vue"
+  },
   "Badge": {
     "description": "Auto imported from components/Badge.vue"
   },

@@ -4,6 +4,11 @@
       <HeaderItem link="/agents">Agents</HeaderItem>
       <HeaderItem link="/form">Form example</HeaderItem>
     </Header>
+    <Alert
+      text="Action completed successfully"
+      v-show="isAlertVisible"
+      @close="closeAlert"
+    />
     <div class="container py-10 flex flex-col">
       <div class="flex flex-row justify-between w-full">
         <h1 class="mb-10">dano does prototypes</h1>
@@ -157,12 +162,17 @@
         <Badge class="mb-4" type="success">Successful</Badge>
         <Badge class="mb-4" type="fail">Failed</Badge>
       </div>
-      <h2 class="mb-8">Modal</h2>
+      <h2 class="mb-8">Modal &amp; alerts</h2>
       <div class="w-full p-10 mb-20 bg-white shadow-xl">
         <Button
           :primary="true"
           label="Click to open modal"
           @click.native="showModal"
+        />
+        <Button
+          :primary="true"
+          label="Click to show alert"
+          @click.native="showAlert"
         />
         <Modal
           v-show="isModalVisible"
@@ -181,6 +191,7 @@ export default {
   data() {
     return {
       isModalVisible: false,
+      isAlertVisible: false,
     };
   },
   methods: {
@@ -190,8 +201,11 @@ export default {
     closeModal() {
       this.isModalVisible = false;
     },
-    test() {
-      console.log("test() was run.");
+    showAlert() {
+      this.isAlertVisible = true;
+    },
+    closeAlert() {
+      this.isAlertVisible = false;
     },
   },
 };

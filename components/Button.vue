@@ -47,7 +47,7 @@ export default {
   @apply px-6 py-3 no-underline font-bold border-gray-900  border-4 transform duration-200;
   &:hover,
   &:focus {
-    @apply underline bg-gray-300;
+    @apply underline bg-gray-500 bg-opacity-25;
   }
   &:focus {
     @apply shadow-outline;
@@ -58,7 +58,7 @@ export default {
   @apply px-6 py-3 no-underline font-bold border-transparent border-4 transform duration-200;
   &:hover,
   &:focus {
-    @apply underline bg-gray-300  border-gray-300;
+    @apply underline bg-gray-500   bg-opacity-25;
   }
   &:focus {
     @apply shadow-outline;
