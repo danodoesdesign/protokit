@@ -1,23 +1,18 @@
 <template>
   <div>
-    <Header title="dano does prototypes">
-      <HeaderItem link="/agents">Agents</HeaderItem>
-      <HeaderItem link="/form">Form example</HeaderItem>
+    <Header title="protokit">
+      <HeaderItem link="/form">Form</HeaderItem>
+      <HeaderItem link="/template">Template</HeaderItem>
     </Header>
+    <Breadcrumbs firstTitle="Protokit" />
     <Alert
       text="Action completed successfully"
       v-show="isAlertVisible"
       @close="closeAlert"
     />
-    <div class="container py-10 flex flex-col">
+    <div class="container py-10 px-5 lg:px-0 flex flex-col">
       <div class="flex flex-row justify-between w-full">
         <h1 class="mb-10">dano does prototypes</h1>
-        <div class="flex-grow"></div>
-        <div class="flex flex-col items-end justify-center">
-          <Badge class="mb-3">TailwindCSS</Badge>
-          <Badge class="mb-3">Vue.js</Badge>
-          <Badge>NuxtJS</Badge>
-        </div>
       </div>
       <div class="w-2/3 mb-20">
         <p>
@@ -66,7 +61,7 @@
 
       <h2 class="mb-8">Checkbox and Radios</h2>
       <div class="w-full p-10 mb-20 bg-white shadow-xl">
-        <div class="w-1/3">
+        <div class="w-full lg:w-1/3">
           <FieldGroup
             label="Choose an option"
             hint="Choose literally anything it doesn't matter."
@@ -90,7 +85,7 @@
       <h2 class="mb-8">Inputs</h2>
       <div class="w-full p-10 mb-20 bg-white shadow-xl">
         <div class="w-full grid grid-cols-3 col-gap-6">
-          <div class="col-span-1">
+          <div class="col-span-3 lg:col-span-1">
             <TextField
               class="mb-4"
               label="Text field"
@@ -99,7 +94,7 @@
               :disabled="false"
             />
           </div>
-          <div class="col-span-1">
+          <div class="col-span-3 lg:col-span-1">
             <TextField
               class="mb-4"
               label="Text field (disabled)"
@@ -111,7 +106,7 @@
         </div>
 
         <div class="w-full grid grid-cols-3 col-gap-6">
-          <div class="col-span-1">
+          <div class="col-span-3 lg:col-span-1">
             <TextArea
               class="mb-4"
               label="Text area"
@@ -120,7 +115,7 @@
               :disabled="false"
             />
           </div>
-          <div class="col-span-1">
+          <div class="col-span-3 lg:col-span-1">
             <TextArea
               class="mb-4"
               label="Text area (disabled)"
@@ -132,7 +127,7 @@
         </div>
 
         <div class="w-full grid grid-cols-3 col-gap-6">
-          <div class="col-span-1">
+          <div class="col-span-3 lg:col-span-1">
             <Select
               class="mb-4"
               label="Select"
@@ -143,7 +138,7 @@
               <option>TestSecond</option>
             </Select>
           </div>
-          <div class="col-span-1">
+          <div class="col-span-3 lg:col-span-1">
             <Select
               class="mb-4"
               label="Select (disabled)"
@@ -168,6 +163,7 @@
           :primary="true"
           label="Click to open modal"
           @click.native="showModal"
+          class="mb-10"
         />
         <Button
           :primary="true"
@@ -188,6 +184,7 @@
 
 <script>
 export default {
+  transition: "fade",
   data() {
     return {
       isModalVisible: false,
@@ -214,10 +211,17 @@ export default {
 <style lang="postcss" scoped>
 .container {
   margin: 0 auto;
-  min-height: 100vh;
   display: flex;
   justify-content: start;
   align-items: start;
   text-align: left;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
 }
 </style>

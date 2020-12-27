@@ -1,7 +1,7 @@
 <template>
   <div class="block">
     <div
-      class="flex items-center py-3 px-2 transform duration-200 cursor-pointer hover:bg-gray-300 hover:underline"
+      class="flex items-center py-3 px-2 transform duration-200 cursor-pointer hover:bg-gray-600 hover:bg-opacity-25 hover:underline"
       @click="toggleCheck()"
       @keyup.space="toggleCheck()"
       @keyup.enter="toggleCheck()"
@@ -27,7 +27,7 @@
         :value="text"
       />
 
-      <label :for="id" class="cursor-pointer inline-flex items-center">
+      <label class="cursor-pointer inline-flex items-center">
         {{ text }}
       </label>
     </div>

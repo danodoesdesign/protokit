@@ -1,32 +1,23 @@
 [
   {
-    "name": "agents",
-    "path": "/agents",
-    "component": "/Users/danielohara/Documents/Development/Personal/boilerplato/pages/agents.vue",
-    "chunkName": "pages/agents"
-  },
-  {
-    "name": "cudgewa",
-    "path": "/cudgewa",
-    "component": "/Users/danielohara/Documents/Development/Personal/boilerplato/pages/cudgewa.vue",
-    "chunkName": "pages/cudgewa"
-  },
-  {
     "name": "form",
     "path": "/form",
     "component": "/Users/danielohara/Documents/Development/Personal/boilerplato/pages/form.vue",
-    "chunkName": "pages/form"
+    "chunkName": "pages/form",
+    "_name": "_70348c40"
   },
   {
-    "name": "northbourne",
-    "path": "/northbourne",
-    "component": "/Users/danielohara/Documents/Development/Personal/boilerplato/pages/northbourne.vue",
-    "chunkName": "pages/northbourne"
+    "name": "template",
+    "path": "/template",
+    "component": "/Users/danielohara/Documents/Development/Personal/boilerplato/pages/template.vue",
+    "chunkName": "pages/template",
+    "_name": "_2a3866d4"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/danielohara/Documents/Development/Personal/boilerplato/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_c91c9334"
   }
 ]

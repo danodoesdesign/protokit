@@ -1,15 +1,17 @@
 <template>
   <div>
-    <Header title="dano does prototypes">
-      <HeaderItem link="/agents">Agents</HeaderItem>
-      <HeaderItem :active="true" link="/form">Form example</HeaderItem>
+    <Header title="protokit">
+      <HeaderItem :active="true" link="/form">Form</HeaderItem>
+      <HeaderItem link="/template">Template</HeaderItem>
     </Header>
-    <div class="container py-10 flex flex-col">
-      <div class="w-full p-10 mb-20 bg-white shadow-xl grid grid-cols-4">
+    <Breadcrumbs firstTitle="Protokit" />
+
+    <div class="container px-5 lg:px-0 flex flex-col">
+      <NuxtLink to="/" class="no-underline mt-5"
+        ><Button type="tertiary" label="← Go back"
+      /></NuxtLink>
+      <div class="w-full p-10 mt-5 mb-20 bg-white shadow-xl grid grid-cols-4">
         <div class="col-span-4 md:col-span-3 lg:col-span-2">
-          <NuxtLink to="/" class="no-underline"
-            ><Button :tertiary="true" label="← Go back"
-          /></NuxtLink>
           <div class="flex flex-row justify-between items-center">
             <h1>Form</h1>
             <Badge>Latest — version 6.8.4</Badge>
@@ -27,7 +29,7 @@
             <div class="col-span-3 xl:col-span-2 flex flex-row-reverse">
               <Button
                 class="mt-8"
-                :tertiary="true"
+                type="tertiary"
                 label="What is this?"
                 @click.native="showModal"
               />
@@ -45,11 +47,39 @@
             label="Describe your passions"
             hint="Try to keep it to 2 paragraphs"
           />
+          <FieldGroup
+            class="mt-3 mb-8"
+            label="Can we harvest your personal data?"
+          >
+            <Radio
+              id="01"
+              group="dataHarvest"
+              text="I already have a Facebook account"
+            />
+            <Radio id="02" group="dataHarvest" text="Yes" />
+            <Radio id="03" group="dataHarvest" text="Probably" />
+          </FieldGroup>
+          <FieldGroup class="mb-8" label="Final declaration">
+            <Checkbox
+              id="04"
+              text="I think therefore I am"
+              @click.native="isContinueDisabled = !isContinueDisabled"
+            />
+          </FieldGroup>
           <div class="w-full flex flex-row justify-between">
-            <Button :tertiary="true" label="← Back a step" />
+            <Button type="tertiary" label="← Back a step" />
             <Button
+              v-if="isContinueDisabled === false"
               class="self end"
-              :primary="true"
+              type="primary"
+              label="Continue →"
+              linkTo="http://www.google.com"
+            />
+            <Button
+              v-if="isContinueDisabled === true"
+              class="self end"
+              :disabled="true"
+              type="primary"
               label="Continue →"
               linkTo="http://www.google.com"
             />
@@ -73,12 +103,13 @@
   </div>
 </template>
 
-<!-- Modal logic ========== -->
 <script>
 export default {
+  transition: "fade",
   data() {
     return {
       isModalVisible: false,
+      isContinueDisabled: true,
     };
   },
   methods: {
@@ -91,15 +122,21 @@ export default {
   },
 };
 </script>
-<!-- Modal logic END ========== -->
 
 <style>
 .container {
   margin: 0 auto;
-  min-height: 100vh;
   display: flex;
   justify-content: start;
   align-items: start;
   text-align: left;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
 }
 </style>

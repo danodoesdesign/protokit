@@ -6,3 +6,7 @@ node_modules/
 .DS_Store
 jsconfig.json
 .DS_Store
+.nuxt/components/index.js
+.nuxt/router.js
+.nuxt/routes.json
+.nuxt/vetur/tags.json

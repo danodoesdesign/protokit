@@ -1,7 +1,7 @@
 <template>
   <div class="w-screen bg-gray-900">
     <div
-      class="container flex justify-items-start items-start text-left h-20 shadow-xl"
+      class="container flex justify-items-start items-start text-left h-20 shadow-xl px-5 lg:px-0"
     >
       <NuxtLink class="text-white self-center mt-1 no-underline" to="/"
         ><h4>{{ title }}</h4></NuxtLink
@@ -23,7 +23,6 @@ export default {
 
 <style lang="postcss" scoped>
 .container {
-  /* index.vue container's min height is cancelled below */
   min-height: 0;
 }
 </style>

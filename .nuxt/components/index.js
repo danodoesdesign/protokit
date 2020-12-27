@@ -1,5 +1,6 @@
 export { default as Alert } from '../../components/Alert.vue'
 export { default as Badge } from '../../components/Badge.vue'
+export { default as Breadcrumbs } from '../../components/Breadcrumbs.vue'
 export { default as Button } from '../../components/Button.vue'
 export { default as Checkbox } from '../../components/Checkbox.vue'
 export { default as DropdownButton } from '../../components/DropdownButton.vue'
@@ -15,6 +16,7 @@ export { default as TextField } from '../../components/TextField.vue'
 
 export const LazyAlert = import('../../components/Alert.vue' /* webpackChunkName: "components/Alert" */).then(c => c.default || c)
 export const LazyBadge = import('../../components/Badge.vue' /* webpackChunkName: "components/Badge" */).then(c => c.default || c)
+export const LazyBreadcrumbs = import('../../components/Breadcrumbs.vue' /* webpackChunkName: "components/Breadcrumbs" */).then(c => c.default || c)
 export const LazyButton = import('../../components/Button.vue' /* webpackChunkName: "components/Button" */).then(c => c.default || c)
 export const LazyCheckbox = import('../../components/Checkbox.vue' /* webpackChunkName: "components/Checkbox" */).then(c => c.default || c)
 export const LazyDropdownButton = import('../../components/DropdownButton.vue' /* webpackChunkName: "components/DropdownButton" */).then(c => c.default || c)

@@ -5,8 +5,6 @@
 </template>
 
 
-
-
 <style>
 @import url("@/assets/global-styles/css.scss");
 </style>

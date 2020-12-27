@@ -11,6 +11,12 @@
   "LazyBadge": {
     "description": "Auto imported from components/Badge.vue"
   },
+  "Breadcrumbs": {
+    "description": "Auto imported from components/Breadcrumbs.vue"
+  },
+  "LazyBreadcrumbs": {
+    "description": "Auto imported from components/Breadcrumbs.vue"
+  },
   "Button": {
     "description": "Auto imported from components/Button.vue"
   },

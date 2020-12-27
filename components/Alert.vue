@@ -2,9 +2,9 @@
   <transition name="alert-fade">
     <div class="flex flex-col items-center">
       <div
-        class="flex flex-col bg-gray-900 text-white shadow-2xl w-3/5 max-w-screen-lg fixed bottom-0 mb-10 z-50"
+        class="flex flex-col bg-gray-900 text-white shadow-2xl w-11/12 md:w-3/5 max-w-screen-lg fixed bottom-0 mb-10 z-50"
       >
-        <div class="flex flex-row p-5 bg-black items-center">
+        <div class="flex flex-row p-5 bg-gray-900 items-center">
           <h6 class="mb-0 ml-5">{{ text }}</h6>
           <span class="flex-grow"></span>
           <Button

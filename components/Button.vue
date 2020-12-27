@@ -3,9 +3,16 @@
     <a class="inline-block" :href="linkTo" aria-hidden="true" tabindex="-1">
       <button
         v-show="
-          type === 'primary' || (type != 'secondary' && type != 'tertiary')
+          (type === 'primary' && disabled === false) ||
+          (type != 'secondary' && type != 'tertiary' && type != 'primary')
         "
         class="flex flex-row btn-primary"
+      >
+        {{ label }}
+      </button>
+      <button
+        v-show="type === 'primary' && disabled === true"
+        class="flex flex-row btn-primary disabled"
       >
         {{ label }}
       </button>
@@ -26,6 +33,10 @@ export default {
     label: String,
     type: String,
     linkTo: String,
+    disabled: {
+      type: Boolean,
+      default: false,
+    },
   },
 };
 </script>
@@ -42,12 +53,22 @@ export default {
     @apply shadow-outline;
   }
 }
+
+.btn-primary.disabled {
+  outline: none;
+  @apply px-6 py-3 no-underline font-bold border-gray-600 bg-gray-600 text-white border-4 transform;
+  &:hover,
+  &:focus {
+    @apply cursor-not-allowed;
+  }
+}
+
 .btn-secondary {
   outline: none;
   @apply px-6 py-3 no-underline font-bold border-gray-900  border-4 transform duration-200;
   &:hover,
   &:focus {
-    @apply underline bg-gray-500 bg-opacity-25;
+    @apply underline bg-gray-600 bg-opacity-25;
   }
   &:focus {
     @apply shadow-outline;
@@ -58,7 +79,7 @@ export default {
   @apply px-6 py-3 no-underline font-bold border-transparent border-4 transform duration-200;
   &:hover,
   &:focus {
-    @apply underline bg-gray-500   bg-opacity-25;
+    @apply underline bg-gray-600   bg-opacity-25;
   }
   &:focus {
     @apply shadow-outline;
