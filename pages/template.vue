@@ -6,8 +6,8 @@
     </Header>
     <Breadcrumbs firstTitle="Protokit" />
 
-    <div class="container px-5 lg:px-0 flex flex-col">
-      <NuxtLink to="/" class="no-underline mt-5"
+    <div class="container flex flex-col px-5 lg:px-0">
+      <NuxtLink to="/" class="mt-5 no-underline"
         ><Button type="tertiary" label="← Go back"
       /></NuxtLink>
       <div class="w-full p-10 mt-5 mb-20 bg-white shadow-xl">

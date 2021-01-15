@@ -2,7 +2,7 @@
   <div>
     <fieldset>
       <label class="block font-bold">{{ label }}</label>
-      <p class="text-gray-800 mb-2">{{ hint }}</p>
+      <p class="mb-2 text-gray-800">{{ hint }}</p>
       <slot></slot>
     </fieldset>
   </div>

@@ -2,7 +2,7 @@
   <NuxtLink :to="link">
     <div
       v-if="active == false"
-      class="text-white hover:bg-black w-auto h-20 px-5 flex flex-col justify-center items-center hover:underline transform duration-200 border-b-8 border-transparent hover:border-purple-600"
+      class="flex flex-col items-center justify-center w-auto h-20 px-5 text-white duration-200 transform border-b-8 border-transparent hover:bg-black hover:underline hover:border-purple-600"
     >
       <span class="mt-1">
         <slot></slot>
@@ -10,7 +10,7 @@
     </div>
     <div
       v-if="active == true"
-      class="text-white hover:bg-black w-auto h-20 px-5 flex flex-col justify-center items-center hover:underline transform duration-200 border-b-8 border-purple-600"
+      class="flex flex-col items-center justify-center w-auto h-20 px-5 text-white duration-200 transform border-b-8 border-purple-600 hover:bg-black hover:underline"
     >
       <span class="mt-1">
         <slot></slot>

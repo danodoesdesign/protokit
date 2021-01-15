@@ -1,8 +1,8 @@
 <template>
-  <div class="w-full grid grid-cols-1">
+  <div class="grid w-full grid-cols-1">
     <div class="col-span-1">
       <label for="text_area" class="block font-bold">{{ label }}</label>
-      <p class="text-gray-800 mb-2">{{ hint }}</p>
+      <p class="mb-2 text-gray-800">{{ hint }}</p>
 
       <textarea
         v-show="!disabled"
@@ -16,7 +16,7 @@
       <textarea
         v-show="disabled"
         disabled
-        class="disabled resize-none"
+        class="resize-none disabled"
         rows="3"
         name="text_area"
         id="text_area"

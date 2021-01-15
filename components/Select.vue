@@ -1,8 +1,8 @@
 <template>
-  <div class="w-full grid grid-cols-1 mb-8">
+  <div class="grid w-full grid-cols-1 mb-8">
     <div class="col-span-1">
       <label for="select" class="block font-bold">{{ label }}</label>
-      <p class="text-gray-800 mb-2">{{ hint }}</p>
+      <p class="mb-2 text-gray-800">{{ hint }}</p>
       <div class="flex flex-row">
         <select v-show="!disabled" type="text" name="select" id="select">
           <slot></slot>
@@ -21,7 +21,7 @@
         <div class="flex flex-col justify-center pointer-events-none">
           <!-- Heroicon name: selector -->
           <svg
-            class="h-5 w-5 text-gray-900 transform z-10 -ml-8"
+            class="z-10 w-5 h-5 -ml-8 text-gray-900 transform"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
             fill="currentColor"

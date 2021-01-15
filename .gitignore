@@ -10,3 +10,4 @@ jsconfig.json
 .nuxt/router.js
 .nuxt/routes.json
 .nuxt/vetur/tags.json
+.DS_Store

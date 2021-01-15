@@ -5,7 +5,7 @@
         <div>
           <button
             type="button"
-            class="inline-flex justify-center w-full border border-gray-300 shadow-sm px-4 py-2 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
+            class="inline-flex justify-center w-full px-4 py-2 border border-gray-300 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
             id="options-menu"
             aria-haspopup="true"
             aria-expanded="true"
@@ -15,7 +15,7 @@
             <!-- Heroicon name: chevron-down -->
             <svg
               id="chevron"
-              class="-mr-1 ml-2 h-6 w-6 transform duration-200"
+              class="w-6 h-6 ml-2 -mr-1 duration-200 transform"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
@@ -32,7 +32,7 @@
         <div
           id="dropdown_menu"
           style="display: none"
-          class="origin-top-right absolute right-0 mt-2 w-56 shadow-2xl border-gray-900 border-4 bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 transform duration-200"
+          class="absolute right-0 w-56 mt-2 duration-200 origin-top-right transform bg-white border-4 border-gray-900 divide-y divide-gray-100 shadow-2xl ring-1 ring-black ring-opacity-5"
           role="menu"
           aria-orientation="vertical"
           aria-labelledby="options-menu"
@@ -54,13 +54,19 @@ export default {
     toggleHide() {
       var dropdownMenu = document.getElementById("dropdown_menu");
       var chevron = document.getElementById("chevron");
+      //
       if (dropdownMenu.style.display === "none") {
+        //
         dropdownMenu.style.display = "block";
         chevron.classList.add("rotate-180");
         dropdownMenu.focus();
+        //
+        //
       } else {
+        //
         dropdownMenu.style.display = "none";
         chevron.classList.remove("rotate-180");
+        //
       }
     },
   },

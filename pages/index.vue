@@ -10,7 +10,7 @@
       v-show="isAlertVisible"
       @close="closeAlert"
     />
-    <div class="container py-10 px-5 lg:px-0 flex flex-col">
+    <div class="container flex flex-col px-5 py-10 lg:px-0">
       <div class="flex flex-row justify-between w-full">
         <h1 class="mb-10">Protokit</h1>
       </div>
@@ -47,7 +47,7 @@
       </div>
 
       <h2 class="mb-8">Buttons</h2>
-      <div class="w-full p-10 mb-20 bg-white shadow-xl flex flex-col">
+      <div class="flex flex-col w-full p-10 mb-20 bg-white shadow-xl">
         <Button class="mb-4" type="primary" label="primary button" />
         <Button
           class="mb-4"
@@ -90,7 +90,7 @@
 
       <h2 class="mb-8">Inputs</h2>
       <div class="w-full p-10 mb-20 bg-white shadow-xl">
-        <div class="w-full grid grid-cols-3 col-gap-6">
+        <div class="grid w-full grid-cols-3 col-gap-6">
           <div class="col-span-3 lg:col-span-1">
             <TextField
               class="mb-4"
@@ -111,7 +111,7 @@
           </div>
         </div>
 
-        <div class="w-full grid grid-cols-3 col-gap-6">
+        <div class="grid w-full grid-cols-3 col-gap-6">
           <div class="col-span-3 lg:col-span-1">
             <TextArea
               class="mb-4"
@@ -132,7 +132,7 @@
           </div>
         </div>
 
-        <div class="w-full grid grid-cols-3 col-gap-6">
+        <div class="grid w-full grid-cols-3 col-gap-6">
           <div class="col-span-3 lg:col-span-1">
             <Select
               class="mb-4"
@@ -157,7 +157,7 @@
         </div>
       </div>
       <h2 class="mb-8">Badges</h2>
-      <div class="w-full p-10 mb-20 bg-white shadow-xl flex flex-col">
+      <div class="flex flex-col w-full p-10 mb-20 bg-white shadow-xl">
         <Badge class="mb-4">Default</Badge>
         <Badge class="mb-4" type="progress">In progress</Badge>
         <Badge class="mb-4" type="success">Successful</Badge>
@@ -185,7 +185,7 @@
         >
       </div>
       <h2 class="mb-8">Accordian</h2>
-      <div class="w-full p-10 mb-20 bg-white shadow-xl flex flex-col">
+      <div class="flex flex-col w-full p-10 mb-20 bg-white shadow-xl">
         <Accordian class="md:w-2/3" title="Test title">
           <h6>You should do this instead</h6>
           <p>Rather than the thing you were going to do.</p>

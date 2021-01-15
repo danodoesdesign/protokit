@@ -1,8 +1,8 @@
 <template>
-  <div class="w-full grid grid-cols-1">
+  <div class="grid w-full grid-cols-1">
     <div class="col-span-1">
       <label for="text_field" class="block font-bold">{{ label }}</label>
-      <p class="text-gray-800 mb-2">{{ hint }}</p>
+      <p class="mb-2 text-gray-800">{{ hint }}</p>
 
       <input
         v-show="!disabled"

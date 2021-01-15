@@ -1,11 +1,11 @@
 <template>
   <div class="block">
     <div
-      class="flex items-center py-3 px-2 transform duration-200 cursor-pointer hover:bg-gray-600 hover:bg-opacity-25 hover:underline"
+      class="flex items-center px-2 py-3 duration-200 transform cursor-pointer hover:bg-gray-600 hover:bg-opacity-25 hover:underline"
       @click="makeActive()"
     >
       <input
-        class="form-radio cursor-pointer"
+        class="cursor-pointer form-radio"
         :id="id"
         ref="theRadio"
         type="radio"
@@ -13,7 +13,7 @@
         :value="text"
       />
 
-      <label class="cursor-pointer inline-flex items-center">
+      <label class="inline-flex items-center cursor-pointer">
         {{ text }}
       </label>
     </div>
@@ -30,8 +30,9 @@ export default {
 
   methods: {
     makeActive() {
-      this.$refs.theRadio.checked = true;
-      this.$refs.theRadio.focus();
+      var theRadio = this.$refs.theRadio;
+      theRadio.checked = true;
+      theRadio.focus();
     },
   },
 };

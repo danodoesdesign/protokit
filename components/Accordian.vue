@@ -2,7 +2,7 @@
   <div class="flex flex-col">
     <button class="z-10" @click="toggle()">
       <div
-        class="flex flex-row bg-gray-300 p-4 cursor-pointer transform duration-200 hover:bg-gray-400 focus:shadow-outline focus:outline-none"
+        class="flex flex-row p-4 duration-200 transform bg-gray-300 cursor-pointer hover:bg-gray-400 focus:shadow-outline focus:outline-none"
         id="accordian"
       >
         <h6 class="m-0 mt-1">{{ title }}</h6>
@@ -10,7 +10,7 @@
         <!-- Heroicon name: chevron-down -->
         <svg
           id="icon"
-          class="h-6 w-6 transform duration-200"
+          class="w-6 h-6 duration-200 transform"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
           fill="currentColor"
@@ -27,7 +27,7 @@
     <transition name="smooth"
       ><div
         id="accordianHiddenSection"
-        class="hidden flex flex-col px-4 pt-5 bg-gray-100"
+        class="flex flex-col hidden px-4 pt-5 bg-gray-100"
       >
         <slot></slot></div
     ></transition>
@@ -45,25 +45,29 @@ export default {
     };
   },
   methods: {
+    //
     toggle() {
-      console.log("toggle run");
       var icon = document.getElementById("icon");
       var accordian = document.getElementById("accordian");
       var accordianHiddenSection = document.getElementById(
         "accordianHiddenSection"
       );
+      //
       if (this.isExpanded == false) {
-        console.log("isExpanded was false");
+        //
         icon.classList.add("rotate-180");
         accordianHiddenSection.classList.remove("hidden");
         accordian.focus();
         this.isExpanded = true;
+        //
+        //
       } else {
-        console.log("isExpanded is " + this.isExpanded);
+        //
         icon.classList.remove("rotate-180");
         accordianHiddenSection.classList.add("hidden");
         accordian.blur();
         this.isExpanded = false;
+        //
       }
     },
   },

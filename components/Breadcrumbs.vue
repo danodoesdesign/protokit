@@ -1,7 +1,7 @@
 <template>
   <div class="bg-gray-200">
     <ol
-      class="container pt-3 pb-4 px-5 lg:px-0"
+      class="container px-5 pt-3 pb-4 lg:px-0"
       vocab="http://schema.org/"
       typeof="BreadcrumbList"
     >
