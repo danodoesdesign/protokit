@@ -14,25 +14,6 @@
       <div class="flex flex-row justify-between w-full">
         <h1 class="mb-10">Protokit</h1>
       </div>
-      <div class="w-2/3 mb-20">
-        <p>
-          Hi stranger! You've found what is, effectively, my own UI kit I've
-          created to help me learn more about Vue.js while having a practical
-          output.
-        </p>
-        <p>
-          I intend to use these basic elements alongside a carbon-copy Figma
-          library to freakin hyper-speed the creation of concept prototypes in
-          my work at
-          <a href="http://futurefriendly.team">Future Friendly</a>.
-        </p>
-        <p>
-          Parts of this are responsive, but for the purpose of rapidly
-          prototyping for concept testing we often control the device being
-          tested on. Thus, this a desktop-first tool set.
-        </p>
-        <p>Soon to be available on Github.</p>
-      </div>
       <h2 class="mb-8">Typography</h2>
       <div class="w-full p-10 mb-20 bg-white shadow-xl">
         <h1>Heading 1</h1>
