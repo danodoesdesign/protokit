@@ -2,7 +2,7 @@
   <div class="flex flex-col">
     <button class="z-10" @click="toggle()">
       <div
-        class="flex flex-row p-4 duration-200 transform bg-gray-300 cursor-pointer hover:bg-gray-400 focus:shadow-outline focus:outline-none"
+        class="flex flex-row p-5 duration-200 transform bg-gray-300 cursor-pointer hover:bg-gray-400 focus:shadow-outline focus:outline-none"
         id="accordian"
       >
         <h6 class="m-0 mt-1">{{ title }}</h6>
@@ -27,7 +27,7 @@
     <transition name="smooth"
       ><div
         id="accordianHiddenSection"
-        class="flex flex-col hidden px-4 pt-5 bg-gray-100"
+        class="flex flex-col hidden px-6 pt-6 bg-gray-100"
       >
         <slot></slot></div
     ></transition>
